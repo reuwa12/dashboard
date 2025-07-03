@@ -15,7 +15,7 @@ import java.util.List;
 public class DashboardRepository {
     private final JdbcTemplate jdbcTemplate;
 
-    public DashboardRepository(JdbcTemplate jdbcTemplate){
+    public DashboardRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
@@ -40,7 +40,7 @@ public class DashboardRepository {
         );
     }
 
-    public List<CustomerRank> findCustomerRankings() {
+    public  List<CustomerRank> findCustomerRankings() {
         String sql = """
                 SELECT customer_id,
                        total_spent,

@@ -1,7 +1,5 @@
 package com.MH.dashboard.controller;
 
-
-
 import com.MH.dashboard.model.CustomerRank;
 import com.MH.dashboard.model.DailySales;
 import com.MH.dashboard.repository.DashboardRepository;
@@ -32,6 +30,6 @@ public class DashboardController {
         List<CustomerRank> ranks = dashboardRepository.findCustomerRankings();
         model.addAttribute("ranks", ranks);
 
-        return "customer-ranking;";
+        return "customer-ranking";
     }
 }

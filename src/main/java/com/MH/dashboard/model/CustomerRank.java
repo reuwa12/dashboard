@@ -1,8 +1,5 @@
 package com.MH.dashboard.model;
 
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-
 import java.math.BigDecimal;
 
 public class CustomerRank {
@@ -12,7 +9,7 @@ public class CustomerRank {
 
     public CustomerRank() {}
 
-    public  CustomerRank(int customerId, BigDecimal totalSpent, int rank){
+    public CustomerRank(int customerId, BigDecimal totalSpent, int rank) {
         this.customerId = customerId;
         this.totalSpent = totalSpent;
         this.rank = rank;
@@ -24,8 +21,8 @@ public class CustomerRank {
 
     public BigDecimal getTotalSpent() {
         return totalSpent;
-
     }
+
     public int getRank() {
         return rank;
     }

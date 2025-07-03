@@ -41,4 +41,3 @@ public class DailySales {
         this.orderCount = orderCount;
     }
 }
-
